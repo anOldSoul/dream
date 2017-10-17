@@ -1,16 +1,13 @@
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/Game';
-import Top from './components/top';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import Home from './components/home';
+// import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 
 // Render the main component into the dom
 ReactDOM.render((
   <Router>
-    <div>     
-      <Route path="/ha" component={App}/>
-      <Route path="/top" component={Top}/>
-    </div>
+      <Route path='/' component={Home}/>
   </Router>
 ), document.getElementById('app'));
