@@ -7,7 +7,7 @@ utils.post = function(url, params, success) {
     method: 'post',
     data: params,
     transformRequest: [function (data) {
-      // Do whatever you want to transform the data
+      // Do whatever you want to transform the data 对 data 进行任意转换处理
       let ret = ''
       for (let it in data) {
         ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
